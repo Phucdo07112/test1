@@ -1,0 +1,33 @@
+.trademark {
+    background-color: #E6F2FF;
+    margin-bottom: 0;
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 30px;
+        margin-bottom: 30px;
+        &-left {
+            max-width: 570px;
+        }
+        
+    }
+    &-item2 {
+        flex-direction: row-reverse;
+    }
+    &-text {
+        color: #04519D;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .trademark {
+        &-item {
+            flex-direction: column;
+        }
+    }
+}

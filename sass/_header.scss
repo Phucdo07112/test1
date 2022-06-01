@@ -1,0 +1,17 @@
+.header {
+    height: 90px;
+    background-color: #5B1317;
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+    &-logo {
+        cursor: pointer;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    
+}

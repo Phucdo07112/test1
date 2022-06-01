@@ -1,0 +1,48 @@
+.type {
+    overflow: hidden;
+    background-image: url("../image/image\ 169.png");
+    &-bg {
+        position: absolute;
+        z-index: -99;
+        img {
+            width: 100vw;
+            object-fit: cover;
+        }
+    }
+    &-text {
+        color: white;
+    }
+    &-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 30px;
+        margin-bottom: 60px;
+        &-left {
+            max-width: 570px;
+            color: white;
+            h1 {
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    &-list2 {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    .type {
+        &-list {
+            flex-direction: column;
+        }
+    }
+}
