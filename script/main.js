@@ -33,6 +33,7 @@ $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
   nav:true,
+  navText: ["<img src='./image/Vector (2).png' class='btn-prev' alt=''>", "<img src='./image/Vector (1).png' class='btn-next' alt=''>"],
   responsive:{
       0:{
           items:1
