@@ -5,6 +5,6 @@ const activeClass = "is-show";
 toggle.click(function() {
   menu.addClass(activeClass);
 });
-menuItem.click(function() {
+menuItem.click(function(  ) {
   menu.removeClass(activeClass)
 })
