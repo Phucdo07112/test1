@@ -15,24 +15,41 @@
         color: white;
         position: relative;
         width: 100%;
-        text-decoration: none;
-        color: white;
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+        &.active {
+            color: #dd4c53;
+        }
+        &.active::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0;
+            top: -32px;
+            left: 0;
+            right: auto;
+            background-color: #fff;
+            border-radius:100px;
+            width: 100%;
+        }
     }
     &-link::after{
         content: "";
         position: absolute;
         height: 3px;
         width: 0;
-        bottom: 0;
+        top: -32px;
         left: 0;
         right: auto;
         background-color: #fff;
         border-radius:100px;
-        transition: all 0.3s;
+        // transition: all 0.3s;
     }
-    // &-link:hover::after{
-    //     width: 100%;
-    // }
+    &-link:hover::after{
+        width: 100%;
+    }
     &-toggle{
         display: none;
         width: 45px;
