@@ -113,3 +113,8 @@
 .owl-dot.active span{
     background-color: #fff !important;
 }
+.owl-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
